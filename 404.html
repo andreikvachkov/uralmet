@@ -519,20 +519,37 @@
                 </svg>
             </button>
             <div class="uslugi_popup__title">
-                Для расчета стоимости оставьте свои контактные данные, и с вами свяжется Ваш персональный менеджер в ближайшее время
+                Для расчета стоимости оставьте свои контактные данные, и с вами свяжется Ваш персональный менеджер в
+                ближайшее время
             </div>
             <form action="">
                 <div class="uslugi_popup__form">
                     <input type="text" placeholder="Ваше имя">
                     <input type="text" placeholder="Номер телефона">
                     <input type="text" placeholder="E-mail">
-                    <button>
+                    <div class="uslugi_popup__dropdown">
+                        <button class="uslugi_popup__dropbtn" id="dropdown-btn">
+                            <span>Выбранная услуга:</span>
+                            <span class="result" id="selected-service">Сверление рельс</span>
+                        </button>
+                        <div class="uslugi_popup__dropdown_content" id="dropdown-content">
+                            <a href="#" data-service="Сверление рельс" class="active">Сверление рельс</a>
+                            <a href="#" data-service="Резка рельс">Резка рельс</a>
+                            <a href="#" data-service="Монтаж и демонтаж рельс">Монтаж и демонтаж рельс</a>
+                            <a href="#" data-service="Аренда площадей под ответхранение">Аренда площадей под
+                                ответхранение</a>
+                            <a href="#" data-service="Прием и отгрузка подвижного состава">Прием и отгрузка подвижного
+                                состава</a>
+                        </div>
+                    </div>
+                    <button class="submit">
                         Отправить
                     </button>
                 </div>
             </form>
             <div class="uslugi_popup__policy">
-                Отправляя заявку, Вы&nbsp;даете согласие на&nbsp;обработку персональных данных согласно <a href="">политике конфиденциальности</a>
+                Отправляя заявку, Вы&nbsp;даете согласие на&nbsp;обработку персональных данных согласно <a
+                    href="">политике конфиденциальности</a>
             </div>
         </div>
     </div>
