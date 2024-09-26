@@ -10,6 +10,9 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -173,6 +176,14 @@
                                 <img src="assets/images/about_front_left4.png" alt="">
                                 <img src="assets/images/about_front_left5.png" alt="">
                             </div>
+                            <div class="about-front__choice__content_mobile">
+                                <img src="assets/images/about_front_left_mobile.png" alt="">
+                                <img src="assets/images/about_front_left_mobile2.png" alt="">
+                                <img src="assets/images/about_front_left_mobile3.png" alt="">
+                                <img src="assets/images/about_front_left_mobile4.png" alt="">
+                                <img src="assets/images/about_front_left_mobile5.png" alt="">
+                                <img src="assets/images/about_front_left_mobile6.png" alt="">
+                            </div>
                         </div>
                     </div>
                     <div class="about-front__right">
@@ -295,7 +306,7 @@
                             <img src="assets/images/ad_top2.svg" alt="">
                         </div>
                         <div class="advantages__top__item__text">
-                            Собственный склад с наличием
+                            Собственный склад с наличием <br>
                             более 15 000 тонн материалов
                         </div>
                     </div>
@@ -360,13 +371,19 @@
                         <div class="swiper advantages__bottom__right__swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="assets/images/ad_right.png" alt="">
+                                    <a href="assets/images/ad_right.png" data-fancybox="gallery">
+                                        <img src="assets/images/ad_right.png" alt="">
+                                    </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="assets/images/ad_right.png" alt="">
+                                    <a href="assets/images/ad_right.png" data-fancybox="gallery">
+                                        <img src="assets/images/ad_right.png" alt="">
+                                    </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="assets/images/ad_right.png" alt="">
+                                    <a href="assets/images/ad_right.png" data-fancybox="gallery">
+                                        <img src="assets/images/ad_right.png" alt="">
+                                    </a>
                                 </div>
                             </div>
                             <button class="advantages__bottom__right__swiper__prev">
@@ -390,8 +407,11 @@
             </div>
         </div>
     </section>
-
-
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            
+        });
+    </script>
     <footer>
         <div class="container">
             <div class="footer__wrap">
